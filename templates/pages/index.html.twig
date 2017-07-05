@@ -1,0 +1,179 @@
+{% extends "layout.html.twig" %}
+
+{% block header %}
+    <div id="home-slider">
+        <header id="header">      
+            <div class="container visible-lg-block">
+                <div class="row">
+                    <div class="col-sm-12 overflow">
+                       <div class="social-icons pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="https://www.facebook.com/Dermacosmetica-1019810828097731/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/dermacosmetica" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/dermacosmetica/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                 </div>
+            </div>
+            <div id="nav">
+                <div class="navbar navbar-inverse" role="banner">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <a class="navbar-brand" href="index.html">
+                                <h1><img src="{{asset('images/derma-logo-hor.png')}}" alt="logo" class="logo-nav"></h1>
+                            </a>
+                            
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            {{ include('nav.html.twig') }}
+                        </div>
+                    </div>
+                </div>
+            </diV>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="main-slider text-center">
+                    <img src="{{asset('images/derma-logo.png')}}" class="wow fadeIn main-logo" alt="slider image"><br/>
+                    <img src="{{asset('images/derma-title-2017.png')}}" class="img-responsive img-center wow fadeInUp main-title" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </div>
+{% endblock %}
+
+{% block content %}    
+	<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/rlINilLCdf8"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-8 col-sm-offset-2 text-center wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h2 class="title">Visite Nuestra Galería de Ediciones Pasadas</h2>
+                            <p>
+                                <a class="video2015" href="http://www.youtube.com/embed/rlINilLCdf8?rel=0&amp;wmode=transparent" ><i class="fa fa-play-circle-o"></i> videomemoria 2016</a> | <a href="galeria" class=""><i class="fa fa-search-plus"></i> visitar galería</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="wow fadeIn timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/1.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Octava<br>
+                                        exitosa edición</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/2.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>1,000 Participantes<br>
+                                        nacionales y extranjeros</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wow fadeInRight timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/3.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4><span class="yellow">+</span> + 2,500<br>
+                                        metros de exhibición</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/4.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Presencia de 75 laboratorios<br/>
+                                        y 250 marcas</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wow fadeInRight timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/5.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Profesores y especialistas<br>
+                                        nacionales e internaciones</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/6.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pre-congreso personalizado<br/>
+                                        de voluminización facial y botulínica</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wow fadeInRight timeline-image">
+                                <img class="img-circle img-responsive" src="{{asset('images/timeline/7.jpg')}}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Congreso<br>
+                                        teórico y práctico</h4>
+                                </div>
+                            </div>
+                        </li>  
+                    </ul>
+                    <div class="wow fadeInUp ending text-center">
+                        <h4>Todos los líderes  
+                            <br>de la dermatología cosmética
+                            <br>y clínica en un mismo evento 
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

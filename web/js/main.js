@@ -1,5 +1,10 @@
 jQuery(function($) {'use strict';
 
+	$(".video2016").colorbox({iframe:true, width:"80%", height:"80%"});
+    $(".video2015").colorbox({iframe:true, width:"80%", height:"80%"});
+    $(".video2014").colorbox({iframe:true, width:"80%", height:"80%"});
+    $(".video-inv").colorbox({iframe:true, width:"80%", height:"80%"}); 
+
 	//Responsive Nav
 	$('li.dropdown').find('.fa-angle-down').each(function(){
 		$(this).on('click', function(){
@@ -77,6 +82,12 @@ jQuery(function($) {'use strict';
 			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
 		});
 	});
+
+	$('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+});	
 
 	// Progress Bar
 	$.each($('div.progress-bar'),function(){
