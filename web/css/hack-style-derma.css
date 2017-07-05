@@ -521,6 +521,15 @@ h1{
   margin: 3px;
 }
 
+/* costos */
+
+.costos h2{
+    color: #303F9F;
+}
+
+.costos h3 {
+    color: #5C6BC0;
+}
 
 @media (min-width:768px) {
     .timeline:before {
