@@ -531,6 +531,21 @@ h1{
     color: #5C6BC0;
 }
 
+.aqua{
+  background: #E0F2F1;
+  padding: 20px;
+  color: #78909C;
+  margin: 5px 0 20px 0;
+}
+
+.aqua h2 {
+    color: #1A237E;
+}
+
+.aqua span {
+    color: #303F9F
+}
+
 @media (min-width:768px) {
     .timeline:before {
         left: 50%
