@@ -1,241 +1,216 @@
 {% extends "layout-new.html.twig" %}
 
-{% block header %}
-    <div id="home-slider">
-        <header id="header">      
-            <div class="container visible-lg-block">
-                <div class="row">
-                    <div class="col-sm-12 overflow">
-                       <div class="social-icons pull-right">
-                            <ul class="nav nav-pills">
-                                <li><a href="https://www.facebook.com/Dermacosmetica-1019810828097731/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/dermacosmetica" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/dermacosmetica/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                 </div>
-            </div>
-            <div id="nav">
-                <div class="navbar navbar-inverse" role="banner">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-
-                            <a class="navbar-brand" href="index.html">
-                                <h1><img src="{{asset('images/derma-logo-hor.png')}}" alt="logo" class="logo-nav"></h1>
-                            </a>
-                            
-                        </div>
-                        <div class="collapse navbar-collapse">
-                            {{ include('nav.html.twig') }}
-                        </div>
-                    </div>
-                </div>
-            </diV>
-        </header>
-        <div class="container">
-            <div class="row">
-                <div class="main-slider text-center">
-                    <img src="{{asset('images/derma-logo.png')}}" class="wow fadeIn main-logo" alt="slider image"><br/>
-                    <img src="{{asset('images/derma-title-2017.png')}}" class="img-responsive img-center wow fadeInUp main-title" alt="slider image">
-                </div>
-            </div>
-        </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-    </div>
-{% endblock %}
-
 {% block content %}    
-	<section id="services">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aqua">
-                        <img src="{{asset('images/derma-logo-xs.png')}}" class="img-responsive img-center">
-                        <h1>Pre Congreso</h1>
-                        <h2>
-                            Curso personalizado de<br/>
-                            voluminización facial y botulínica.<br/>
-                            <small>
-                                Técnicas avanzadas
-                            </small>
-                        </h2>
-                        <h3>
-                            4 de Octubre, 2017
-                        </h3>
-                        <h4>
-                            Concepto y aplicación del PHI-phi en el rostro, número aureo<br/>
-                            Videos de anatomía cadavérica, inyecciones en vivo.
-                        </h4>
-                        <h3>
-                            <span>Centro Citibanamex<br/>
-                            Palacio de Iturbide 3</span>
-                        </h3>
+    <header class="header header-inverse h-fullscreen p-0 overflow-hidden" data-parallax="{{asset('images/bg-derma.jpg')}}">
+        <div class="container">
+
+            <div class="row h-full">
+                <div class="col-12 col-lg-6 align-self-center text-center">
+
+                    <img src="{{asset('images/derma-logo.png')}}" class="main-logo w-200" alt="slider image"><br/>
+                    <img src="{{asset('images/derma-title-2017.png')}}" class="main-title" alt="slider image">
+
+                    <br><br>
+
+                    <div>
+                        <a class="btn btn-lg btn-round btn-info w-220" href="{{path('costos')}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Regístrese Ahora</a>
+                        <a class="btn btn-lg btn-outline btn-warning btn-round w-200 ml-8 hidden-sm-down" href="{{path('programa')}}">Programa</a>
                     </div>
+                    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2">
-                    <img src="{{asset('images/ponentes/dra-valeria-lopez.jpg')}}" class="img-circle" style="width: 160px; height: 160px;">
-                    <h3>Dra. Valeria López</h3>
-                    <p>
-                        Presidenta SAMEI<br/>
-                        (Sociedad Argentina Médica Expertos en Inyectables)<br/>
-                        Speaker Internacional <br/>
-                        MERZ - ALLERGAN - IBSA
-                    </p>
+
+
+                <div class="col-12 col-lg-6 align-self-end text-right hidden-md-down">
+                    <img src="{{asset('images/beauty-005.png')}}" alt="..." data-aos="slide-up" data-aos-offset="0">
                 </div>
-                <div class="col-md-4">
-                    <img src="{{asset('images/ponentes/dr-javier-ruiz.jpg')}}" class="img-circle" style="width: 160px; height: 160px;">
-                    <h3>Dr. Javier Ruíz Ávila</h3>
-                    <p>
-                        (Sociedad Mexicana Médica Expertos en Inyectables)<br/>
-                        Speaker Internacional<br/>
-                        MERZ - ALLERGAN - GALDERMA
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aqua">
-                        <p class="lead">
-                            Duración 1 día<br/>
-                            Costo del taller $2,000.00 USD + IVA<br/>
-                            <strong>Cupo limitado a 50 lugares<br/>
-                            Incluye Acceso al Congreso </strong><br/>
-                            Inscripciones<br/>
-                            <a href="{{path('costos')}}" class="btn btn-info">Inscribirse Ahora</a>
-                        </p>
-                    </div>
-                </div>
+
             </div>
 
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="divider-md"></div>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/rlINilLCdf8"></iframe>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </header>
+    <main class="main-content">
 
-    <section id="action" class="responsive">
-        <div class="vertical-center">
-             <div class="container">
+        <section class="section pb-0 overflow-hidden" id="section-features">
+            <div class="container">
                 <div class="row">
-                    <div class="action take-tour">
-                        <div class="col-sm-8 col-sm-offset-2 text-center wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h2 class="title">Visite Nuestra Galería de Ediciones Pasadas</h2>
-                            <p>
-                                <a class="video2015" href="http://www.youtube.com/embed/rlINilLCdf8?rel=0&amp;wmode=transparent" ><i class="fa fa-play-circle-o"></i> videomemoria 2016</a> | <a href="galeria" class=""><i class="fa fa-search-plus"></i> visitar galería</a>
-                            </p>
+                    <div class="col-12 col-md-6 text-center">
+                        <img class="mr-40" src="{{asset('images/volume-001.jpg')}}" alt="..." data-aos="slide-up">
+                    </div>
+                    <div class="col-12 col-md-6 align-self-center pb-70 advert text-center" >
+                        <h3>Pre Congreso</h3>
+                        <h5>
+                            Curso personalizado de
+                            voluminización facial y botulínica.
+                        </h5>
+                        <h4>
+                            Técnicas avanzadas
+                        </h4>
+                         <p class="lead">Concepto y aplicación del PHI-phi en el rostro, número aureo<br/>
+                            Videos de anatomía cadavérica, inyecciones en vivo.
+                        </p>
+                        <h5>
+                            4 de Octubre, 2017<br/>
+                            Centro Citibanamex - Palacio de Iturbide 3
+                        </h5>
+                        <br/>
+                        <div class="flexbox flex-grow-all gap-items-2">
+                            <div class="row gap-y">
+                                <div class="col-12 col-md-6 team-2">
+                                    <img src="{{asset('images/ponentes/dra-valeria-lopez.jpg')}}" width="100" alt="...">
+                                    <h5>Dra. Valeria López</h5>
+                                    <small>Presidenta SAMEI</small>
+                                    <p>
+                                        (Sociedad Argentina Médica Expertos en Inyectables)<br/>
+                                        Speaker Internacional <br/>
+                                        <strong>MERZ - ALLERGAN - IBSA</strong>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6 team-2">
+                                    <img src="{{asset('images/ponentes/dr-javier-ruiz.jpg')}}" width="100" alt="...">
+                                    <h5>Dr. Javier Ruíz Ávila</h5>
+                                    <p>
+                                        (Sociedad Mexicana Médica Expertos en Inyectables)<br/>
+                                        Speaker Internacional<br/>
+                                        <strong>MERZ - ALLERGAN - GALDERMA</strong>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="card card-shadowed card-bordered card-hover-shadow">
+                                    <div class="card-block">
+                                        <h5 class="card-title">DURACIÓN 1 DÍA</h5>
+                                        <p class="lead">
+                                            Costo del taller $2,000.00 USD + IVA<br/>
+                                            <strong>Cupo limitado a 50 lugares Incluye Acceso al Congreso </strong>
+                                        </p>
+                                        <p>
+                                            <a href="{{path('costos')}}" class="btn btn-round btn-info">Inscribirse Ahora</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </section>
+        </section>
 
-    <section id="timeline">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="wow fadeIn timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/1.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Octava<br>
-                                        exitosa edición</h4>
+        <section class="section" style="background-image: linear-gradient(120deg, #E3F2FD 0%, #E8EAF6 100%)">
+            <div class="container text-center">
+                <header class="section-header">
+                    <h2>Dermacosmética Videomemoria</h2>
+                    <p>Visite Nuestra Galería de Ediciones Pasadas</p>
+                </header>
+                <div class="row gap-y">
+                    <div class="col-12">
+                        <div class="video-btn-wrapper">
+                            <img class="shadow-2 rounded" src="{{asset('images/videomemoria.jpg')}}" alt="..." width="500">
+                            <a class="btn btn-circular btn-glass" href="//www.youtube.com/embed/rlINilLCdf8" data-provide="lightbox"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-50">
+                    <a class="btn btn-primary btn-round" href="{{path('galeria')}}">Galeria Ediciones Pasadas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pb-0 overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 pb-70 align-self-center">
+                        <ul class="timeline">
+                            <li data-aos="slide-left">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/1.jpg')}}" alt="">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/2.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>1,000 Participantes<br>
-                                        nacionales y extranjeros</h4>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Octava<br>
+                                            exitosa edición</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wow fadeInRight timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/3.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4><span class="yellow">+</span> + 2,500<br>
-                                        metros de exhibición</h4>
+                            </li>
+                            <li class="timeline-inverted" data-aos="slide-right">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/2.jpg')}}" alt="">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/4.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Presencia de 75 laboratorios<br/>
-                                        y 250 marcas</h4>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>1,000 Participantes<br>
+                                            nacionales y extranjeros</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wow fadeInRight timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/5.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Profesores y especialistas<br>
-                                        nacionales e internaciones</h4>
+                            </li>
+                            <li data-aos="slide-left">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/3.jpg')}}" alt="">
                                 </div>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/6.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pre-congreso personalizado<br/>
-                                        de voluminización facial y botulínica</h4>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>+ 2,500<br>
+                                            metros de exhibición</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wow fadeInRight timeline-image">
-                                <img class="img-circle img-responsive" src="{{asset('images/timeline/7.jpg')}}" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Congreso<br>
-                                        teórico y práctico</h4>
+                            </li>
+                            <li class="timeline-inverted" data-aos="slide-right">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/4.jpg')}}" alt="">
                                 </div>
-                            </div>
-                        </li>  
-                    </ul>
-                    <div class="wow fadeInUp ending text-center">
-                        <h4>Todos los líderes  
-                            <br>de la dermatología cosmética
-                            <br>y clínica en un mismo evento 
-                        </h4>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Presencia de 75 laboratorios<br/>
+                                            y 250 marcas</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-aos="slide-left">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/5.jpg')}}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Profesores y especialistas<br>
+                                            nacionales e internaciones</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted" data-aos="slide-right">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/6.jpg')}}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Pre-congreso personalizado<br/>
+                                            de voluminización facial y botulínica</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-aos="slide-left">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="{{asset('images/timeline/7.jpg')}}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>Congreso<br>
+                                            teórico y práctico</h4>
+                                    </div>
+                                </div>
+                            </li>  
+                        </ul>
+                        <div class="ending text-center" data-aos="slide-up">
+                            <h4>Todos los líderes  
+                                <br>de la dermatología cosmética
+                                <br>y clínica en un mismo evento 
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </main>
 {% endblock %}
