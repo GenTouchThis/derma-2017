@@ -848,6 +848,10 @@ h1{
   color: #C03035;
 }
 
+.table-active, .table-active>td, .table-active>th, .table-hover .table-active:hover, .table-hover .table-active:hover>td, .table-hover .table-active:hover>th, .table-hover tbody tr:hover {
+    background-color: rgba(128, 203, 196, 075);
+}
+
 
 @media (min-width:768px) {
     .timeline:before {
