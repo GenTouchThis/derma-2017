@@ -441,7 +441,7 @@ h1{
 }
 
 .profiler-content{
-  padding: 30px 25px;
+  padding: 5px 5px;
   max-height: 500px;
   overflow: scroll;
 }
