@@ -232,7 +232,8 @@ h1{
 /* Breadcrumb */
 
 #page-breadcrumb {
-    background-image: url(../images/cta-bg-001.png);
+
+    background-image: url(../images/squares-top-001.png);
     background-color: #FFF;
     background-repeat: repeat-x;
     height: 130px;
@@ -266,7 +267,8 @@ h1{
 
 /* footer */
 #footer {
-    background-image: url(../images/leaves-yellow-bottom-001.png);
+    background-image: url(../images/derma-bg-002.jpg);
+    background-size: cover;
 }
 
 .copyright-text {
